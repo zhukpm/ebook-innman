@@ -696,12 +696,12 @@ h2.chapter-number {
     color: var(--brand-color-green);
 }
 
-.topics-list {
+.row.topics-list {
     margin-top: 1.85em;
     font-size: 1.111111em;
 }
 
-.topics-list ol li {
+.row.topics-list ol li {
     margin-bottom: 0.6em;
 }
 
@@ -728,7 +728,7 @@ h2.chapter-number {
         height: 91px;
         background-size: calc(1.15 * var(--chapter-flower-w));
     }
-    .topics-list {
+    .row.topics-list {
         margin-top: 2.8em;
     }
     .chapter-cover {
@@ -763,7 +763,7 @@ h2.chapter-number {
         top: 0;
         right: 15px;
     }
-    .topics-list {
+    .row.topics-list {
         margin-top: 2.725em;
     }
     .chapter-cover-page .chapter-cover {
@@ -799,7 +799,7 @@ h2.chapter-number {
         right: 31px;
     }
 
-    .topics-list {
+    .row.topics-list {
         font-size: 1em;
         margin-top: 2.68em;
     }
@@ -832,14 +832,14 @@ h2.chapter-number {
     background-color: var(--brand-color-lightblue);
 }
 .dcp-header .container {
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 6px;
+    padding-bottom: 33px;
 }
 .dcp-header h2:not(.chapter-number) {
-    font-size: 1.363636em;
+    font-size: 1.111111em;
 }
 
-.dictionary-cover-page .topics-list {
+.dictionary-cover-page .row.topics-list {
     margin-top: 1.56em;
 }
 
@@ -857,14 +857,12 @@ h2.chapter-number {
     top: 0;
     left: 0;
     bottom: 0;
-    overflow: hidden;
 }
 
 .dictionary-cover-page .chapter-cover img {
-    position: absolute;
-    top: 18px;
-    left: calc(50% + 345px);
-    width: 330px;
+    margin: 1.5em 19%;
+    width: 62%;
+    height: auto;
 }
 
 .ru-keyword {
@@ -899,16 +897,49 @@ ul.keywords-style > li::before {
     /*
     Ширина контейнер => 720
      */
+    .dcp-header h2 {
+        margin-top: 0;
+    }
+    .dcp-header h2:not(.chapter-number) {
+        font-size: 1.666667em;
+    }
 }
 @media (min-width: 992px) {
     /*
         Ширина контейнер => 960
      */
+    .dcp-header .container {
+        padding-top: 33px;
+    }
+    .dictionary-cover-page .row.topics-list {
+        margin-top: 2.28em;
+    }
+    .dictionary-cover-page .chapter-cover img {
+        margin: 1.5em 25%;
+        width: 50%;
+    }
 }
 @media (min-width: 1470px) {
     /*
         Ширина контейнер => 1140
      */
+    .dcp-header .container {
+        padding-top: 73px;
+        padding-bottom: 73px;
+    }
+    .dcp-header h2:not(.chapter-number) {
+        font-size: 1.363636em;
+    }
+    .dictionary-cover-page .chapter-cover {
+        overflow: hidden;
+    }
+    .dictionary-cover-page .chapter-cover img {
+        position: absolute;
+        margin: 0;
+        top: 18px;
+        left: calc(50% + 345px);
+        width: 330px;
+    }
 }
 /* ---- */
 
