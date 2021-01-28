@@ -290,6 +290,16 @@ ul ol > li:last-of-type, ul ul > li:last-of-type, ol ol > li:last-of-type, ol ul
     line-height: 1.4;
 }
 
+.footnote {
+    position: relative;
+    top: -0.5em;
+    font-size: 70%;
+    font-weight: bold;
+    color: var(--brand-color-green);
+}
+.footnote::before { content: "[";}
+.footnote::after { content: "]";}
+
 /*
 Videos. Видео заключаются в wrapper с указанием соответствующего aspect ratio
  */
