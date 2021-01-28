@@ -1,7 +1,7 @@
 <!--?xml version='1.0' encoding='UTF-8'?-->
 <!doctype html>
 <html xml:lang="ru-ru" lang="ru-ru" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:epub="http://www.idpf.org/2007/ops">
+      xmlns:epub="http://www.idpf.org/2007/ops" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,9 +13,22 @@
 
     <script type="text/javascript" src="../../js/kotobeeInteractive.js"></script>
     <script type="text/javascript" src="../../js/global.js"></script>
+
+    <style>
+        #epubContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            min-height: 100vh;
+        }
+    </style>
 </head>
-<body>
-<div class="ru-chapter glossary">
+<body style="background-color: lightskyblue">
+<div id="epubContainer">
+<div class="ru-chapter glossary" style="background-color: white;">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -23,11 +36,11 @@
             </div>
         </div>
         <div class="row block-title justify-content-center">
-            <div class="col-12 col-lg-10">
+            <div class="col-10">
                 <h3>Глоссарий</h3>
             </div>
         </div>
-        <div id="glossary-nav">
+        <div id="glossary-nav" class="hidden-sm shown-lg-flex">
             <span data-value="А" class="gl-active"></span>
             <span data-value="Б"></span>
             <span data-value="В"></span>
@@ -64,7 +77,7 @@
         </div>
         <div class="text-block">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="А" class="glossary-letter">А</div>
                     <ul class="no-style">
                         <li><a href="#">Адекватность информации</a></li>
@@ -73,7 +86,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="Б" class="glossary-letter">Б</div>
                     <ul class="no-style">
                         <li><a href="#">Базовый источник инноваций в условиях глобализации</a></li>
@@ -82,7 +95,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="В" class="glossary-letter">В</div>
                     <ul class="no-style">
                         <li><a href="#">Венчурное предпринимательство </a></li>
@@ -91,7 +104,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="Г" class="glossary-letter">Г</div>
                     <ul class="no-style">
                         <li><a href="#">Государственная инновационная политика</a></li>
@@ -100,7 +113,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="Д" class="glossary-letter">Д</div>
                     <ul class="no-style">
                         <li><a href="#">Достоинства инновационных программ </a></li>
@@ -109,7 +122,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="Ж" class="glossary-letter">Ж</div>
                     <ul class="no-style">
                         <li><a href="#">Жизненный цикл проекта</a></li>
@@ -117,7 +130,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="З"  class="glossary-letter">З</div>
                     <ul class="no-style">
                         <li><a href="#">Задачи менеджмента продуктовых инноваций</a></li>
@@ -126,7 +139,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="И" class="glossary-letter">И</div>
                     <ul class="no-style">
                         <li><a href="#">Индикаторы
@@ -142,7 +155,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="К" class="glossary-letter">К</div>
                     <ul class="no-style">
                         <li><a href="#">Классификация инновационных проектов</a></li>
@@ -164,7 +177,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
+                <div class="col-10">
                     <div id="Л"  class="glossary-letter">Л</div>
                     <ul class="no-style">
                         <li><a href="#">Лидер нового поколения</a></li>
@@ -175,7 +188,7 @@
 
         </div>
     </div>
-
+</div>
 </div>
 <script type="text/javascript" src="../../js/glossary-scroll.min.js">
 </script>

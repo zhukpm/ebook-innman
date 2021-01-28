@@ -1,8 +1,7 @@
 var gnav = document.getElementById("glossary-nav");
 var epub = document.getElementById("epubContainer");
 var nav_lets = gnav.children;
-var gnavOffset = gnav.offsetTop;
-var gnavHeight = epub.offsetTop + gnav.offsetHeight;
+var gnavOfftop = gnav.offsetTop + 1;
 
 var anim = true;
 epub.addEventListener('scroll', function (evt) {
@@ -11,9 +10,9 @@ epub.addEventListener('scroll', function (evt) {
         setTimeout(
             function scroll_(evt) {
                 anim = true;
-                if (epub.scrollTop > gnavOffset) {
+                if (epub.scrollTop > gnavOfftop) {
                     gnav.classList.add("glnav-scrolled");
-                    gnav.style.top = (epub.scrollTop - gnavOffset) + "px";
+                    gnav.style.top = (epub.scrollTop - gnavOfftop) + "px";
                 } else {
                     gnav.classList.remove("glnav-scrolled");
                     gnav.style.top = "0";
@@ -37,10 +36,11 @@ for (let i = 0; i < nav_lets.length; i++) {
             let kw_letter = document.getElementById(this.getAttribute("data-value"));
             // console.log(kw_letter);
             if (kw_letter != null) {
-                const y = kw_letter.getBoundingClientRect().top + epub.scrollTop - gnavHeight;
+                const y = kw_letter.getBoundingClientRect().top + epub.scrollTop - (epub.offsetTop + gnav.offsetHeight);
                 // console.log("y="+y);
-                // console.log(document.getElementById(kw_letter).getBoundingClientRect().top);
+                // console.log(kw_letter.getBoundingClientRect().top);
                 // console.log(epub.scrollTop);
+                // console.log(epub.offsetTop);
                 // console.log(gnav.offsetHeight);
                 scrollTo(y, 350);
                 // epub.scrollTo({top: y, behavior: 'smooth'});
@@ -54,9 +54,7 @@ for (let i = 0; i < nav_lets.length; i++) {
 // d = (optative) ease function. Default easeOutCuaic
 function scrollTo(c,e,d){d||(d=easeOutCuaic);
     var a=epub;
-    if(0===a.scrollTop){var b=a.scrollTop;
-        ++a.scrollTop;a=b+1===a.scrollTop--?a:document.body}
-    b=a.scrollTop;0>=e||("object"===typeof b&&(b=b.offsetTop),
+    var b=a.scrollTop;0>=e||("object"===typeof b&&(b=b.offsetTop),
     "object"===typeof c&&(c=c.offsetTop),function(a,b,c,f,d,e,h){
         function g(){0>f||1<f||0>=d?a.scrollTop=c:(a.scrollTop=b-(b-c)*h(f),
             f+=d*e,setTimeout(g,e))}g()}(a,b,c,0,1/e,20,d))};
