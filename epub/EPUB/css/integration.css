@@ -10,6 +10,10 @@ Bootstrap integration styles
     width: auto;
 }
 
+.row+.row {
+    margin-top: 0;
+}
+
 /*!
 Kotobee integration styles
  */
@@ -23,14 +27,14 @@ body {
  * Добавление сайдбара на больших экранах
  * TODO: Закомментировать перед сборкой
  */
-/*@media (min-width: 1300px) {*/
-/*    !**/
-/*        Ширина контейнер => 960 до 1470. Потом 1140*/
-/*     *!*/
-/*    body {*/
-/*        margin-left: 330px;*/
-/*    }*/
-/*}*/
+@media (min-width: 1300px) {
+    /*
+        Ширина контейнер => 960 до 1470. Потом 1140
+     */
+    body {
+        margin-left: 330px;
+    }
+}
 
 /* ----------------------------------------- */
 
