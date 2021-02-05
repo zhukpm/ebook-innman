@@ -1,7 +1,7 @@
 /*!
 Bootstrap integration styles
  */
-.container,.container-md,.container-sm,.container-xl{position:relative}.row{padding:0;width:auto}.row+.row{margin-top:0}
+.container,.container-md,.container-sm,.container-xl{position:relative}.row{padding:0;width:auto}.row+.row{margin-top:0}.col{margin-bottom:0}
 /*!
 Kotobee integration styles
  */
