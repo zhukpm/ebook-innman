@@ -10,6 +10,14 @@ Bootstrap integration styles
     width: auto;
 }
 
+.row+.row {
+    margin-top: 0;
+}
+
+.col {
+    margin-bottom: 0;
+}
+
 /*!
 Kotobee integration styles
  */
