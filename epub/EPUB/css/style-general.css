@@ -482,14 +482,45 @@ Book info and intro
     min-height: 100%;
 }
 
-.book-info {
-    margin-bottom: 2em;
+.book-info-page .block-title {
+    background-color: transparent;
 }
 
-.ru-reviewers, .ru-isbn, .ru-copyrights {
-    margin-top: 1em;
-    margin-bottom: 1em;
+.book-info p {
+    margin-bottom: 0.7em;
 }
+
+.book-info p:last-of-type {
+    margin-bottom: 0;
+}
+
+.book-info div + div {
+    margin-top: 1em;
+}
+
+.book-info .ru-copyright + .ru-copyright {
+    margin-top: 0.5em;
+}
+
+.wide-back {
+    margin: 1em auto;
+    padding: 2em 0;
+    background-color: #EFF8FD;
+}
+
+
+@media (min-width: 1470px) {
+    /*
+        Ширина контейнер => 1140
+     */
+    .book-info-page .block-title .book-info {
+        margin-left: -10px;
+    }
+}
+/*.ru-reviewers, .ru-isbn, .ru-copyrights {*/
+/*    margin-top: 1em;*/
+/*    margin-bottom: 1em;*/
+/*}*/
 
 /*.ru-authors h6 {*/
 /*    text-transform: uppercase;*/
