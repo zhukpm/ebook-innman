@@ -2,10 +2,19 @@
     Reader styles' overrides
  */
 /*
+    Данные стили НЕ применяются к iframes - только к самой читалке и epub-книге, открытой в читалке!
+    Стилизация контента внутри iframes (предыдущая/следующая страницы) осуществляется в файле
+    global.css. При этом в качестве префикса к css-селекторам файла добавляется
+    #epubContainer.stylesEnabled, то есть, стилизация возможна начиная с #epubScroller и глубже
+ */
+/*
     General
 */
 
 #epubContent {
+    /*
+    Окно просмотра epub в читалке
+     */
     height: 100%;
 }
 
@@ -298,10 +307,4 @@
         width: calc(100% + 330px); /* Ширина родителя + сайдбар */
         margin-left: -330px;
     }
-
-    #epubContainer.stylesEnabled sections#spreadL > section,
-    #epubContainer.stylesEnabled sections#spreadR > section {
-        padding-left: 0; /* обнуляем padding у основной страницы. Он остается только у контента iframe */
-    }
-
 }
