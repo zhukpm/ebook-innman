@@ -8,7 +8,8 @@
             link.id = cssId;
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = 'epub/EPUB/css/' + cssId;
+            // TODO: reset to ''epub/EPUB/css/' + cssId' before build
+            link.href = '../../../../' + 'epub/EPUB/css/' + cssId;
             link.media = 'all';
             body.appendChild(link);
             // console.log("Appending link to body script");
