@@ -10,6 +10,7 @@
             link.type = 'text/css';
             // TODO: reset to ''epub/EPUB/css/' + cssId' before build
             link.href = '../../../../' + 'epub/EPUB/css/' + cssId;
+            // link.href = 'epub/EPUB/css/' + cssId;
             link.media = 'all';
             body.appendChild(link);
             // console.log("Appending link to body script");
@@ -17,16 +18,7 @@
         var headCssId = "ru-css-head";
         if (!document.getElementById(headCssId)) {
             // Убираем padding у тела основного контента сразу, чтобы убрать глитч при нажатии F5
-            var a = "div#tabMenu::before {\n" +
-                "    display: block;\n" +
-                "    position: relative;\n" +
-                "    width: 100%;\n" +
-                "    height: 100%;\n" +
-                "    top: 0;\n" +
-                "    left: 0;\n" +
-                "    background-color: blue;\n" +
-                "    z-index: 10;\n" +
-                "}", // "#epubContainer.stylesEnabled sections#spreadL>section,#epubContainer.stylesEnabled sections#spreadR>section{padding-left:0}",
+            var a = "", // "#epubContainer.stylesEnabled sections#spreadL>section,#epubContainer.stylesEnabled sections#spreadR>section{padding-left:0}",
                 b = ""; // "#epubContent,#epubContent>sections>section.k-section{height:100%!important}"
             var css = a + b;
             var head = document.head || document.getElementsByTagName('head')[0],
