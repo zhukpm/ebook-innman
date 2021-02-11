@@ -17,7 +17,16 @@
         var headCssId = "ru-css-head";
         if (!document.getElementById(headCssId)) {
             // Убираем padding у тела основного контента сразу, чтобы убрать глитч при нажатии F5
-            var a = "", // "#epubContainer.stylesEnabled sections#spreadL>section,#epubContainer.stylesEnabled sections#spreadR>section{padding-left:0}",
+            var a = "div#tabMenu::before {\n" +
+                "    display: block;\n" +
+                "    position: relative;\n" +
+                "    width: 100%;\n" +
+                "    height: 100%;\n" +
+                "    top: 0;\n" +
+                "    left: 0;\n" +
+                "    background-color: blue;\n" +
+                "    z-index: 10;\n" +
+                "}", // "#epubContainer.stylesEnabled sections#spreadL>section,#epubContainer.stylesEnabled sections#spreadR>section{padding-left:0}",
                 b = ""; // "#epubContent,#epubContent>sections>section.k-section{height:100%!important}"
             var css = a + b;
             var head = document.head || document.getElementsByTagName('head')[0],
@@ -29,6 +38,33 @@
                 style.styleSheet.cssText = css;
             } else {
                 style.appendChild(document.createTextNode(css));
+            }
+        }
+
+        if (document.getElementsByClassName("part-cover-page").length > 0) {
+            if (!document.getElementById("tabMenuLayerBottom")) {
+                var tmb = document.getElementById("tabMenu");
+                var lay = document.createElement('div');
+                lay.id = "tabMenuLayerBottom";
+                lay.classList.add("tab-layer");
+                lay.classList.add("layer-bottom");
+                tmb.appendChild(lay)
+            }
+            if (!document.getElementById("tabMenuLayerTop")) {
+                var tmb = document.getElementById("readerHeader");
+                var lay = document.createElement('div');
+                lay.id = "tabMenuLayerTop";
+                lay.classList.add("tab-layer");
+                lay.classList.add("layer-top");
+                tmb.appendChild(lay)
+            }
+
+        } else {
+            if (document.getElementById("tabMenuLayerBottom")) {
+                document.getElementById("tabMenuLayerBottom").remove()
+            }
+            if (document.getElementById("tabMenuLayerTop")) {
+                document.getElementById("tabMenuLayerTop").remove()
             }
         }
     }
