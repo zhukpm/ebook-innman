@@ -10,6 +10,7 @@
             link.type = 'text/css';
             // TODO: reset to ''epub/EPUB/css/' + cssId' before build
             link.href = '../../../../' + 'epub/EPUB/css/' + cssId;
+            // link.href = 'epub/EPUB/css/' + cssId;
             link.media = 'all';
             body.appendChild(link);
             // console.log("Appending link to body script");
@@ -29,6 +30,33 @@
                 style.styleSheet.cssText = css;
             } else {
                 style.appendChild(document.createTextNode(css));
+            }
+        }
+
+        if (document.getElementsByClassName("part-cover-page").length > 0) {
+            if (!document.getElementById("tabMenuLayerBottom")) {
+                var tmb = document.getElementById("tabMenu");
+                var lay = document.createElement('div');
+                lay.id = "tabMenuLayerBottom";
+                lay.classList.add("tab-layer");
+                lay.classList.add("layer-bottom");
+                tmb.appendChild(lay)
+            }
+            if (!document.getElementById("tabMenuLayerTop")) {
+                var tmb = document.getElementById("readerHeader");
+                var lay = document.createElement('div');
+                lay.id = "tabMenuLayerTop";
+                lay.classList.add("tab-layer");
+                lay.classList.add("layer-top");
+                tmb.appendChild(lay)
+            }
+
+        } else {
+            if (document.getElementById("tabMenuLayerBottom")) {
+                document.getElementById("tabMenuLayerBottom").remove()
+            }
+            if (document.getElementById("tabMenuLayerTop")) {
+                document.getElementById("tabMenuLayerTop").remove()
             }
         }
     }
