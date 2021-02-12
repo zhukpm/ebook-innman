@@ -102,6 +102,12 @@ h1, h2, h3, h5 {
     margin: 0;
 }
 
+h4 {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
 h5 {
     font-family: Roboto, sans-serif;
     color: #646464;
@@ -548,6 +554,10 @@ table {
     display: block;
 }
 
+tbody {
+    display: block;
+}
+
 tbody tr, tbody tr td {
     display: flex;
     flex-direction: column;
@@ -608,7 +618,9 @@ ul.no-style {
 ul.no-style li + li {
     margin-top: 0.5em;
 }
-
+.basic-facts ul.no-style {
+    line-height: 1.4;
+}
 .basic-facts ul.no-style li + li {
     margin-top: 1em;
 }
@@ -1940,12 +1952,12 @@ ul.keywords-style > li::before {
 
 /* Schemes */
 #scheme-1 {
-    padding-bottom: 120.61%%;
+    padding-bottom: 120.61%;
     background-image: url("../imgs/scheme-1-s.png");
 }
 
 #scheme-2 {
-    padding-bottom: 98.38%%;
+    padding-bottom: 98.38%;
     background-image: url("../imgs/scheme-2-s.png");
 }
 
@@ -1991,6 +2003,18 @@ ul.keywords-style > li::before {
 
 #table-1 tbody tr td:nth-of-type(3)::before {
     content: "Основные резиденты";
+}
+
+#table-2 td {
+    text-align: right;
+}
+
+#table-2 tbody tr td:nth-of-type(1)::before {
+    content: "Американские";
+}
+
+#table-2 tbody tr td:nth-of-type(2)::before {
+    content: "Японские";
 }
 
 /* ---- */
@@ -2173,7 +2197,7 @@ ul.keywords-style > li::before {
 
     #scheme-5 {
         padding-bottom: 0;
-        height: 1551px;
+        height: 1320px;
         background-image: url("../imgs/scheme-5-m.png");
     }
 
@@ -2197,6 +2221,10 @@ ul.keywords-style > li::before {
         display: table-header-group;
     }
 
+    tbody {
+        display: table-row-group;
+    }
+
     tbody tr {
         display: table-row;
         padding: 5px;
@@ -2204,6 +2232,10 @@ ul.keywords-style > li::before {
 
     tbody tr td {
         display: table-cell;
+    }
+
+    #table-2 td {
+        text-align: left;
     }
 
     th, td {
@@ -2317,7 +2349,7 @@ ul.keywords-style > li::before {
     }
 
     #scheme-5 {
-        height: 1551px;
+        height: 1285px;
         background-image: url("../imgs/scheme-5-l.png");
     }
 
@@ -2389,7 +2421,7 @@ ul.keywords-style > li::before {
     }
 
     #scheme-5 {
-        height: 1551px;
+        height: 1322px;
         background-image: url("../imgs/scheme-5-xl.png");
     }
 
