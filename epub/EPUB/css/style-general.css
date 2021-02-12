@@ -1904,52 +1904,52 @@ ul.keywords-style > li::before {
 
 .chapter-2 {
     --chapter-flower: url("../icons/2-anise.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 48px;
 }
 
 .chapter-3 {
     --chapter-flower: url("../icons/3-garlic.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 44px;
 }
 
 .chapter-4 {
     --chapter-flower: url("../icons/4-lemon.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 46px;
 }
 
 .chapter-5 {
     --chapter-flower: url("../icons/5-lily.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 40px;
 }
 
 .chapter-6 {
     --chapter-flower: url("../icons/6-orchid.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 46px;
 }
 
 .chapter-7 {
     --chapter-flower: url("../icons/7-rose.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 44px;
 }
 
 .chapter-8 {
     --chapter-flower: url("../icons/8-rosemary.svg");
-    --chapter-flower-w: 40px;
+    --chapter-flower-w: 28px;
 }
 
 .chapter-9 {
     --chapter-flower: url("../icons/9-strawberry.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 40px;
 }
 
 .chapter-10 {
     --chapter-flower: url("../icons/10-vanilla.svg");
-    --chapter-flower-w: 50px;
+    --chapter-flower-w: 40px;
 }
 
 .chapter-11 {
     --chapter-flower: url("../icons/11-mint.svg");
-    --chapter-flower-w: 60px;
+    --chapter-flower-w: 48px;
 }
 
 /* Schemes */
