@@ -621,7 +621,8 @@ ul.no-style li + li {
 .basic-facts ul.no-style {
     line-height: 1.4;
 }
-.basic-facts ul.no-style li + li {
+.basic-facts ul.no-style li + li,
+.text-block ul.no-style li + li {
     margin-top: 1em;
 }
 
