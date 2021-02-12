@@ -1222,10 +1222,10 @@ h2.chapter-number {
     width: 450px;
 }
 .chapter-6 .chapter-contour {
-    top: 25em;
+    top: 31em;
 }
 .chapter-6 .chapter-cover {
-    top: 25em;
+    top: 31em;
 }
 
 .chapter-7 .chapter-cover img {
@@ -1362,10 +1362,10 @@ h2.chapter-number {
         width: 600px;
     }
     .chapter-6 .chapter-contour {
-        top: 28em;
+        top: 34em;
     }
     .chapter-6 .chapter-cover {
-        top: 29em;
+        top: 35em;
     }
 
     .chapter-7 .chapter-cover img {
@@ -1613,7 +1613,8 @@ h2.chapter-number {
         top: 8em;
     }
     .chapter-6 .chapter-cover {
-        top: 7.7em;
+        right: -30px;
+        top: 11em;
     }
     .chapter-7 .chapter-cover {
         top: 7.5em;
