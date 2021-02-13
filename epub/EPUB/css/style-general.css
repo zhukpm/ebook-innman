@@ -37,7 +37,7 @@ General styles
     Ширина контейнер ДО 767 пикселей => 540
     Остальные настраиваются через @media queries
 
-    База для шрифта - 1em = 16px;
+    База для шрифта - 1em = 16p 1.111111x;
  */
 html {
     --brand-color-blue: #0079c1;
@@ -154,9 +154,9 @@ h5 {
     h2 {
         font-size: 1.666667em;
     }
-
+    /* BUGFIX Kotobee bug??? */
     h3 {
-        font-size: 1.666667em;
+        font-size: 1.666666em;
     }
 }
 
@@ -654,7 +654,7 @@ ul.big-bullets li::before {
 Tests (Quizzes)
 Customizing styles without adding new classes
 */
-.kInteractive.questions.ru-quiz > ._style1 h4 {
+.ru-quiz h4 {
     margin: 0 0 22px !important;
     padding: 0;
     border: none;
@@ -669,7 +669,7 @@ Customizing styles without adding new classes
     text-align: center;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .ques {
+.ru-quiz .ques {
     padding: 20px 36px 21px 30px;
     background-color: transparent;
     border: none;
@@ -679,16 +679,16 @@ Customizing styles without adding new classes
     color: #000000;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .ques.separator {
+.ru-quiz .ques.separator {
     border-left: 3px solid var(--brand-color-green);
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .ques p.separator {
+.ru-quiz .ques p.separator {
     margin: 0;
     padding: 0;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .ques p.explanation {
+.ru-quiz .ques p.explanation {
     margin-top: 1em;
     margin-left: -0.5em;
     padding-top: 0.5em;
@@ -696,7 +696,7 @@ Customizing styles without adding new classes
     border-top: 2px solid var(--brand-color-gray);
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .no {
+.ru-quiz .no {
     display: inline-block;
     margin-left: -57px;
     width: 2em;
@@ -709,11 +709,11 @@ Customizing styles without adding new classes
     margin-right: 20px;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 span.no::after {
+.ru-quiz span.no::after {
     content: "";
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .questionTxt {
+.ru-quiz .questionTxt {
     margin-left: 57px;
     margin-bottom: 0.8em;
     font-size: 1em;
@@ -721,12 +721,12 @@ Customizing styles without adding new classes
     color: black;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .questionTxt strong {
+.ru-quiz .questionTxt strong {
     display: inline-block;
     width: 0;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer {
+.ru-quiz .answer {
     position: relative;
     display: flex;
     margin-left: 57px;
@@ -734,12 +734,12 @@ Customizing styles without adding new classes
     justify-content: flex-start;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer + .answer {
+.ru-quiz .answer + .answer {
     margin-top: 0.5em;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="radio"],
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="checkbox"] {
+.ru-quiz .answer input[type="radio"],
+.ru-quiz .answer input[type="checkbox"] {
     margin-right: 0.5em;
     width: 1em;
     height: 1em;
@@ -747,7 +747,7 @@ Customizing styles without adding new classes
     opacity: 0;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="radio"] ~ label::before {
+.ru-quiz .answer input[type="radio"] ~ label::before {
     position: absolute;
     top: 0.1em; /* (line-height (1.3em) - height (1em)) / 2  */
     left: -1.5em;
@@ -760,7 +760,7 @@ Customizing styles without adding new classes
     border-radius: 50%;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="radio"]:checked ~ label::after {
+.ru-quiz .answer input[type="radio"]:checked ~ label::after {
     position: absolute;
     top: 0.1em;
     left: -1.5em;
@@ -772,7 +772,7 @@ Customizing styles without adding new classes
     border-radius: 50%;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="checkbox"] ~ label::before {
+.ru-quiz .answer input[type="checkbox"] ~ label::before {
     position: absolute;
     top: 0.1em; /* (line-height (1.3em) - height (1em)) / 2  */
     left: -1.5em;
@@ -785,11 +785,11 @@ Customizing styles without adding new classes
     border-radius: 4px;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="checkbox"]:checked ~ label::before {
+.ru-quiz .answer input[type="checkbox"]:checked ~ label::before {
     background-color: var(--brand-color-green);
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer input[type="checkbox"]:checked ~ label::after {
+.ru-quiz .answer input[type="checkbox"]:checked ~ label::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -803,7 +803,7 @@ Customizing styles without adding new classes
     transform: rotate(-45deg);
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .answer label {
+.ru-quiz .answer label {
     position: relative;
     flex: 1;
     margin-bottom: 0;
@@ -811,25 +811,25 @@ Customizing styles without adding new classes
     cursor: pointer;
 }
 
-.kInteractive.questions.ru-quiz.no-numbers .questionTxt {
+.ru-quiz.no-numbers .questionTxt {
     margin-left: -0.5em;
 }
 
-.kInteractive.questions.ru-quiz.no-numbers .answer {
+.ru-quiz.no-numbers .answer {
     margin-left: 0;
 }
 
-.kInteractive.questions.ru-quiz.no-numbers .questionTxt strong {
+.ru-quiz.no-numbers .questionTxt strong {
     width: 1.25em;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 .btnContainer {
+.ru-quiz .btnContainer {
     display: flex;
     justify-content: flex-end;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 input[type="submit"] {
-    margin-left: 20px;
+.ru-quiz input[type="submit"] {
+    margin-left: 0.1em;
     padding: 0 0.5em;
     width: auto;
     height: auto;
@@ -840,8 +840,8 @@ Customizing styles without adding new classes
     color: #383838;
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 1em;
-    /*font-size: 0.9em;*/
+    font-size: 0.9em;
+    /*font-size: 1em;*/
     /*line-height: 1.2;*/
     line-height: 1.8;
     font-weight: normal;
@@ -849,16 +849,24 @@ Customizing styles without adding new classes
     cursor: pointer;
 }
 
-.kInteractive.questions.ru-quiz > ._style1 input[type="submit"].questions-submit {
+.ru-quiz input[type="submit"].questions-submit {
     background-color: var(--brand-color-green);
     color: white;
+}
+
+@media (min-width: 380px) {
+    /*BUGFIX: buttons on extra small devices*/
+    .ru-quiz input[type="submit"] {
+        font-size: 1em;
+        margin-left: 20px;
+    }
 }
 
 @media (min-width: 768px) {
     /*
     Ширина контейнер => 720
      */
-    /*.kInteractive.questions.ru-quiz > ._style1  input[type="submit"] {*/
+    /*.ru-quiz  input[type="submit"] {*/
     /*    font-size: 1em;*/
     /*}*/
 }
@@ -2045,7 +2053,7 @@ ul.keywords-style > li::before {
 .basic-facts .block-title img {
     position: absolute;
     height: 48px;
-    left: 0;
+    left: 50%;
     /*
     top: [3em (top- bottom-paddings) + 1.2 * 1.111111em (line height of header) - 48px (height of image)] / 2
     (target top- bottom-paddings for image) - 1.5em (top- padding) = top (negative, moving image up)
@@ -2300,6 +2308,7 @@ ul.keywords-style > li::before {
 
     .basic-facts .block-title img {
         height: 60px;
+        left: 0;
         top: calc(1em - 30px);
     }
 
