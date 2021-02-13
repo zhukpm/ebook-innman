@@ -1123,7 +1123,7 @@ h2.chapter-number {
 .chapter-contour {
     position: absolute;
     margin-left: -15px; /* bootstraps container left padding */
-    top: 28.222222em;
+    top: calc(100% + 1em);
     width: 100%;
 }
 
@@ -1134,7 +1134,7 @@ h2.chapter-number {
 .chapter-cover {
     position: absolute;
     margin-left: -15px; /* bootstraps container left padding */
-    top: 28.222222em;
+    top: calc(100% + 1em);
     width: 100%;
 }
 
@@ -1189,106 +1189,110 @@ h2.chapter-number {
     width: 419px;
 }
 
-.chapter-2 .chapter-contour {
-    top: 32em;
-}
-.chapter-2 .chapter-cover {
-    top: 32em;
-}
+/*.chapter-2 .chapter-contour {*/
+/*    top: 32em;*/
+/*}*/
+/*.chapter-2 .chapter-cover {*/
+/*    top: 32em;*/
+/*}*/
 
 .chapter-3 .chapter-cover img {
     width: 419px;
 }
 
-.chapter-3 .chapter-contour {
-    top: 22em;
-}
-.chapter-3 .chapter-cover {
-    top: 22em;
-}
+/*.chapter-3 .chapter-contour {*/
+/*    top: 22em;*/
+/*}*/
+/*.chapter-3 .chapter-cover {*/
+/*    top: 22em;*/
+/*}*/
 
 .chapter-4 .chapter-cover img {
     width: 419px;
 }
 
-.chapter-4 .chapter-contour {
-    top: 27em;
-}
-.chapter-4 .chapter-cover {
-    top: 27em;
-}
+/*.chapter-4 .chapter-contour {*/
+/*    top: 27em;*/
+/*}*/
+/*.chapter-4 .chapter-cover {*/
+/*    top: 27em;*/
+/*}*/
 
 .chapter-5 .chapter-cover img {
     /*width: 419px;*/
 }
 
-.chapter-5 .chapter-contour {
-    top: 25em;
-}
-.chapter-5 .chapter-cover {
-    top: 25em;
-}
+/*.chapter-5 .chapter-contour {*/
+/*    top: 25em;*/
+/*}*/
+/*.chapter-5 .chapter-cover {*/
+/*    top: 25em;*/
+/*}*/
 
 .chapter-6 .chapter-cover img {
     width: 450px;
 }
-.chapter-6 .chapter-contour {
-    top: 31em;
-}
-.chapter-6 .chapter-cover {
-    top: 31em;
-}
+/*.chapter-6 .chapter-contour {*/
+/*    top: 31em;*/
+/*}*/
+/*.chapter-6 .chapter-cover {*/
+/*    top: 31em;*/
+/*}*/
 
 .chapter-7 .chapter-cover img {
     width: 450px;
 }
-.chapter-7 .chapter-contour {
-    top: 27em;
-}
-.chapter-7 .chapter-cover {
-    top: 27em;
-}
+/*.chapter-7 .chapter-contour {*/
+/*    top: 27em;*/
+/*}*/
+/*.chapter-7 .chapter-cover {*/
+/*    top: 27em;*/
+/*}*/
 
 .chapter-8 .chapter-cover img {
     width: 100%;
     max-width: 100%;
 }
-.chapter-8 .chapter-contour {
-    top: 21em;
-}
+/*.chapter-8 .chapter-contour {*/
+/*    top: 21em;*/
+/*}*/
 .chapter-8 .chapter-cover {
-    top: 22em;
+    padding-top: 3.518518%;
+    /*top: calc(100% + 2em);*/
 }
 
 .chapter-9 .chapter-cover img {
     width: 100%;
     max-width: 100%;
 }
-.chapter-9 .chapter-contour {
-    top: 22em;
-}
+/*.chapter-9 .chapter-contour {*/
+/*    top: 22em;*/
+/*}*/
 .chapter-9 .chapter-cover {
-    top: 23.5em;
+    padding-top: 5.185185%;
+    /*top: calc(100% + 2.5em);*/
 }
 
 .chapter-10 .chapter-cover img {
     width: 450px;
 }
-.chapter-10 .chapter-contour {
-    top: 27em;
-}
+/*.chapter-10 .chapter-contour {*/
+/*    top: 27em;*/
+/*}*/
 .chapter-10 .chapter-cover {
-    top: 30em;
+    padding-top: 9.63%;
+    /*top: calc(100% + 4em);*/
 }
 
 .chapter-11 .chapter-cover img {
-    width: 450px;
+    width: 74%;
 }
-.chapter-11 .chapter-contour {
-    top: 29em;
-}
+/*.chapter-11 .chapter-contour {*/
+/*    top: 29em;*/
+/*}*/
 .chapter-11 .chapter-cover {
-    top: 24em;
+    margin-top: -9.26%;
+    /*top: calc(100% - 4em);*/
 }
 
 @media (min-width: 768px) {
@@ -1317,13 +1321,13 @@ h2.chapter-number {
         margin-top: 2.8em;
     }
 
-    .chapter-cover {
-        top: 32em;
-    }
+    /*.chapter-cover {*/
+    /*    top: 32em;*/
+    /*}*/
 
-    .chapter-contour {
-        top: 30.5em;
-    }
+    /*.chapter-contour {*/
+    /*    top: 30.5em;*/
+    /*}*/
 
     .chapter-1 .chapter-cover img {
         width: 546px;
@@ -1332,95 +1336,100 @@ h2.chapter-number {
     .chapter-2 .chapter-cover img {
         width: 546px;
     }
-    .chapter-2 .chapter-contour {
-        top: 33.5em;
-    }
-    .chapter-2 .chapter-cover {
-        top: 35em;
-    }
+    /*.chapter-2 .chapter-contour {*/
+    /*    top: 33.5em;*/
+    /*}*/
+    /*.chapter-2 .chapter-cover {*/
+    /*    top: 35em;*/
+    /*}*/
 
     .chapter-3 .chapter-cover img {
         width: 546px;
     }
-    .chapter-3 .chapter-contour {
-        top: 25em;
-    }
-    .chapter-3 .chapter-cover {
-        top: 26em;
-    }
+    /*.chapter-3 .chapter-contour {*/
+    /*    top: 25em;*/
+    /*}*/
+    /*.chapter-3 .chapter-cover {*/
+    /*    top: 26em;*/
+    /*}*/
 
     .chapter-4 .chapter-cover img {
         width: 546px;
     }
-    .chapter-4 .chapter-contour {
-        top: 27em;
-    }
-    .chapter-4 .chapter-cover {
-        top: 28em;
-    }
+    /*.chapter-4 .chapter-contour {*/
+    /*    top: 27em;*/
+    /*}*/
+    /*.chapter-4 .chapter-cover {*/
+    /*    top: 28em;*/
+    /*}*/
 
     .chapter-5 .chapter-cover img {
         width: 546px;
     }
-    .chapter-5 .chapter-contour {
-        top: 28em;
-    }
-    .chapter-5 .chapter-cover {
-        top: 29em;
-    }
+    /*.chapter-5 .chapter-contour {*/
+    /*    top: 28em;*/
+    /*}*/
+    /*.chapter-5 .chapter-cover {*/
+    /*    top: 29em;*/
+    /*}*/
 
     .chapter-6 .chapter-cover img {
         width: 600px;
     }
-    .chapter-6 .chapter-contour {
-        top: 34em;
-    }
-    .chapter-6 .chapter-cover {
-        top: 35em;
-    }
+    /*.chapter-6 .chapter-contour {*/
+    /*    top: 34em;*/
+    /*}*/
+    /*.chapter-6 .chapter-cover {*/
+    /*    top: 35em;*/
+    /*}*/
 
     .chapter-7 .chapter-cover img {
         width: 600px;
     }
-    .chapter-7 .chapter-contour {
-        top: 32em;
-    }
-    .chapter-7 .chapter-cover {
-        top: 32em;
-    }
+    /*.chapter-7 .chapter-contour {*/
+    /*    top: 32em;*/
+    /*}*/
+    /*.chapter-7 .chapter-cover {*/
+    /*    top: 32em;*/
+    /*}*/
 
-    .chapter-8 .chapter-contour {
-        top: 25em;
-    }
-    .chapter-8 .chapter-cover {
-        top: 26.4em;
-    }
+    /*.chapter-8 .chapter-contour {*/
+    /*    top: 25em;*/
+    /*}*/
+    /*.chapter-8 .chapter-cover {*/
+    /*    top: 26.4em;*/
+    /*}*/
 
-    .chapter-9 .chapter-contour {
-        top: 25em;
-    }
+    /*.chapter-9 .chapter-contour {*/
+    /*    top: 25em;*/
+    /*}*/
     .chapter-9 .chapter-cover {
-        top: 27em;
+        padding-top: 52px;
+    }
+    .chapter-9 .chapter-cover img {
+        margin: 0 0 0 auto;
+        width: 694px;
     }
 
     .chapter-10 .chapter-cover img {
         width: 600px;
     }
-    .chapter-10 .chapter-contour {
-        top: 30em;
-    }
-    .chapter-10 .chapter-cover {
-        top: 30em;
-    }
+    /*.chapter-10 .chapter-contour {*/
+    /*    top: 30em;*/
+    /*}*/
+    /*.chapter-10 .chapter-cover {*/
+    /*    top: 30em;*/
+    /*}*/
 
     .chapter-11 .chapter-cover img {
-        width: 600px;
+        width: 500px;
     }
-    .chapter-11 .chapter-contour {
-        top: 34em;
-    }
+    /*.chapter-11 .chapter-contour {*/
+    /*    top: 34em;*/
+    /*}*/
     .chapter-11 .chapter-cover {
-        top: 28.5em;
+        margin-top: 0;
+        /*top: 28.5em;*/
     }
 }
 
@@ -1478,9 +1487,9 @@ h2.chapter-number {
     .chapter-2 .chapter-cover img {
         width: 465px;
     }
-    .chapter-2 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-2 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-2 .chapter-cover {
         top: 12em;
     }
@@ -1488,9 +1497,9 @@ h2.chapter-number {
     .chapter-3 .chapter-cover img {
         width: 550px;
     }
-    .chapter-3 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-3 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-3 .chapter-cover {
         top: 8.5em;
     }
@@ -1498,9 +1507,9 @@ h2.chapter-number {
     .chapter-4 .chapter-cover img {
         width: 550px;
     }
-    .chapter-4 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-4 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-4 .chapter-cover {
         top: 8.5em;
     }
@@ -1508,9 +1517,9 @@ h2.chapter-number {
     .chapter-5 .chapter-cover img {
         width: 520px;
     }
-    .chapter-5 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-5 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-5 .chapter-cover {
         top: 10.5em;
     }
@@ -1518,9 +1527,9 @@ h2.chapter-number {
     .chapter-6 .chapter-cover img {
         width: 550px;
     }
-    .chapter-6 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-6 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-6 .chapter-cover {
         top: 11em;
     }
@@ -1528,9 +1537,9 @@ h2.chapter-number {
     .chapter-7 .chapter-cover img {
         width: 550px;
     }
-    .chapter-7 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-7 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-7 .chapter-cover {
         top: 10em;
     }
@@ -1538,10 +1547,11 @@ h2.chapter-number {
     .chapter-8 .chapter-cover img {
         width: 97%;
     }
-    .chapter-8 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-8 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-8 .chapter-cover {
+        padding-top: 0;
         top: -30px;
         right: 0;
     }
@@ -1550,10 +1560,11 @@ h2.chapter-number {
         /*width: 694px;*/
         width: 600px;
     }
-    .chapter-9 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-9 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-9 .chapter-cover {
+        padding-top: 0;
         top: 179px;
         right: 0;
     }
@@ -1561,19 +1572,20 @@ h2.chapter-number {
     .chapter-10 .chapter-cover img {
         width: 550px;
     }
-    .chapter-10 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-10 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-10 .chapter-cover {
+        padding-top: 0;
         top: 12.5em;
     }
 
     .chapter-11 .chapter-cover img {
         width: 450px;
     }
-    .chapter-11 .chapter-contour {
-        top: -30px;
-    }
+    /*.chapter-11 .chapter-contour {*/
+    /*    top: -30px;*/
+    /*}*/
     .chapter-11 .chapter-cover {
         top: 6em;
     }
