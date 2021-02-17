@@ -696,20 +696,33 @@ Customizing styles without adding new classes
     border-top: 2px solid var(--brand-color-gray);
 }
 
-.ru-quiz .no {
+.ru-quiz .questionTxt {
+    position: relative;
+}
+
+/* BUGFIX: Kotobee bug: separators are included into questions. So to create numbering
+ we use <em>Number</em> as a first question word. But so we can't use bold & italic in questions
+  anymore */
+
+.ru-quiz .questionTxt .no,
+.ru-quiz .questionTxt em {
     display: inline-block;
-    margin-left: -57px;
+    position: absolute;
+    left: -57px;
+    top: -.4em;
     width: 2em;
     height: 2em;
     border: 1px solid var(--brand-color-green);
     border-radius: 50%;
     font-size: 1em;
+    font-style: normal;
     line-height: 2em;
     text-align: center;
     margin-right: 20px;
 }
 
-.ru-quiz span.no::after {
+.ru-quiz .questionTxt span.no::after,
+.ru-quiz .questionTxt em::after {
     content: "";
 }
 
@@ -721,9 +734,15 @@ Customizing styles without adding new classes
     color: black;
 }
 
-.ru-quiz .questionTxt strong {
-    display: inline-block;
-    width: 0;
+.ru-quiz .ques:not(.separator) .questionTxt {
+    margin-left: 10%;
+}
+
+.ru-quiz .questionTxt strong,
+.ru-quiz .questionTxt span:first-of-type {
+    /*display: inline-block;*/
+    /*width: 0;*/
+    display: none;
 }
 
 .ru-quiz .answer {
@@ -869,6 +888,10 @@ Customizing styles without adding new classes
     /*.ru-quiz  input[type="submit"] {*/
     /*    font-size: 1em;*/
     /*}*/
+
+    .ru-quiz .ques:not(.separator) .questionTxt {
+        margin-left: -.5em;
+    }
 }
 
 @media (min-width: 992px) {
