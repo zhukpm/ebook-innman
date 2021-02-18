@@ -261,6 +261,11 @@ ol.rounded-ol > li::before {
     text-align: center;
 }
 
+ol.rounded-ol.blue > li::before {
+    background-color: var(--brand-color-blue);
+    color: #fff;
+}
+
 ol.cyrillic-ol > li::before {
     color: var(--brand-color-green);
     text-align: right;
