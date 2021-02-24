@@ -1743,8 +1743,27 @@ h2.chapter-number {
 }
 
 .short-description .sub-header {
+    display: inline-block;
     font-weight: bold;
     margin-bottom: 0.9em;
+}
+
+.short-description .sub-header a {
+    font-weight: bold;
+    border-bottom: solid 2px var(--brand-color-green);
+}
+
+.short-description .sub-header:hover::after {
+    display: inline-block;
+    content: "";
+    margin: 0 0 0 10px;
+    width: 0;
+    height: 0;
+    background: none;
+
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-left: calc(1.725 * 0.3em) solid var(--brand-color-green);
 }
 
 .dictionary-cover-page .chapter-cover {
@@ -1761,10 +1780,24 @@ h2.chapter-number {
 }
 
 .ru-keyword {
+    display: inline-block;
     margin-bottom: 0.35em;
     font-size: larger;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.ru-keyword:hover::after {
+    display: inline-block;
+    content: "";
+    margin: 0 0 0 10px;
+    width: 0;
+    height: 0;
+    background: none;
+
+    border-top: 0.33em solid transparent;
+    border-bottom: 0.33em solid transparent;
+    border-left: calc(1.725 * 0.33em) solid var(--brand-color-blue);
 }
 
 ul.keywords-style {
