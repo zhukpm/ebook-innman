@@ -1,0 +1,36 @@
+The development of an innovative project and its life cycle is impossible without the skillful use of management technologies for forecasting and planning.
+Forecasting of an organization's innovative development is the stage of its activity that precedes planning. At this stage, the search is conducted for probable directions of its development in the long term, the object of the forecast is set and the forecast itself is developed. In a more detailed form, innovative forecasting consists in evaluating and selecting acceptable management decisions from several options for the organization's development. These options should include indicators that will be used later in developing strategic plans, determining the quality of products and services, and conducting research and development.
+The forecast develops and evaluates innovative tasks across the entire structure of the management system.
+Among them:
+- choosing a forecasting method;
+- adaptation of management structures that meet the needs of an innovation organization;
+- forecast of the organizational and technical level of production by stages of the product life cycle;
+- selection of indicators that have a significant impact on the value of the useful effect of products;
+- forecasting of quality indicators of innovative products by the criterion of maximum useful effect;
+- justification of the economic feasibility of attracting new or improving the quality of available resources to increase the efficiency of products, etc.
+Forecasts should be adjusted as new information about the forecasting object becomes available.
+There are various forecasting methods. The most common methods are extrapolation, expert evaluation, and modeling.
+Innovations are predicted primarily using expert assessment and modeling methods.
+Methods of expert estimations are based on generalized results of the polls. The survey subjects are highly qualified specialists. When processing survey results, mathematical models are used to link together and take into account the mutually dependent impact of social, economic, and technical and technological indicators.
+Mathematical methods clearly and clearly define the parameters for performing operational calculations.
+Forecasts differ by:
+- duration — short-term (up to a year), medium-term (up to five years) and long-term (more than 20 years);
+- scale of action — global, state, and regional;
+- type of innovation activity — product, process, and strategic.
+Problems of global, regional, and state forecasts for the corresponding time periods are the developments object of research institutes (for example, the Institute of forecasting of the Russian Academy of Sciences). Forecast data can be used by both public and private organizations.
+Planning is also a function of innovation management. It includes a set of activities that provide for setting development focuses based on available resources and tasks.
+Here is an example describing the main stages of planning and organizing the release of innovative products (fig. 5).
+
+Fig. 5. The main stages of the organization of production of innovation products 
+
+The process of planning the release of such products, as well as the organization's innovation activities in general, is complex and variable. It starts with the study of factors external and internal environment of the organization, analysis of its research and development departments, new product samples and technologies, with a study of the situation in the area of financial activity. It analyzes the fundamental aspects of the organization's activity, the state of production capabilities, innovative products, technologies, Finance and management, including the management apparatus. This is followed by the process of developing plans directly.
+It is very important to properly understand and apply the criteria for evaluating and selecting innovation projects. For these purposes, mainly financial and economic criteria and corresponding indicators are used. If necessary, when evaluating qualitative parameters, characteristics are analyzed, which usually do not have a quantitative assessment, but significantly complement the idea of the innovation organization's activity. In addition to financial and economic criteria, there are regulatory criteria, criteria for providing resources, and strategic criteria.
+The following indicators are used: project cost; profitability calculated on the basis of capital investments; payback period; efficiency coefficient; savings on conditionally fixed expenses, etc.
+Regulatory criteria include legal requirements that reflect environmental requirements, and requirements of standards that provide for compliance with intellectual property rights (patentability, etc.).
+It is desirable to plan and develop innovations in accordance with certain principles of innovation, the most important of which are:
+- priority ranking, which assumes the need to include innovations in the plan, the prospects of which are confirmed by forecasts, calculations and implementation of which provides significant economic and social benefits not only in the short term, but also in the medium and long term;
+- continuity that requires consistent development of short -, medium-and long-term innovation development plans;
+- consistency — end-to-end planning for all stages of the life cycle of the subject of innovation, especially in large organizations with internal investment opportunities;
+- complexity — the close relationship of the innovation plan with the appropriate sections of the organization's economic and social development plan, production program, investment and financial plans, and personnel policy of the organization;
+- economic reasonableness — including in the plan only economically reasoned measures provided with the necessary resources, presented in the organization's business plan.
+Innovation activity is based on continuous analysis of monitoring materials in the scientific and technical sphere on the basis of a unified information network. Such a network should include the following elements: a multi-level electronic intellectual property exchange; industry databases on scientific and innovative works; the state register of research and development works carried out at the expense of budget funds at all levels; information on the state of the labor market for innovator-specialists.
