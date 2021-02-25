@@ -1753,7 +1753,7 @@ h2.chapter-number {
     border-bottom: solid 2px var(--brand-color-green);
 }
 
-.short-description .sub-header:hover::after {
+.short-description .sub-header::after {
     display: inline-block;
     content: "";
     margin: 0 0 0 10px;
@@ -1763,7 +1763,13 @@ h2.chapter-number {
 
     border-top: 0.3em solid transparent;
     border-bottom: 0.3em solid transparent;
-    border-left: calc(1.725 * 0.3em) solid var(--brand-color-green);
+    border-left: calc(1.725 * 0.3em) solid transparent;
+
+    transition: border-left-color 0.3s ease-out;
+}
+
+.short-description .sub-header:hover::after {
+    border-left-color: var(--brand-color-green);
 }
 
 .dictionary-cover-page .chapter-cover {
@@ -1781,15 +1787,18 @@ h2.chapter-number {
 
 .ru-keyword {
     display: inline-block;
+    position: relative;
     margin-bottom: 0.35em;
     font-size: larger;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.ru-keyword:hover::after {
-    display: inline-block;
+.ru-keyword::after {
     content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(100% - 1.03em);
     margin: 0 0 0 10px;
     width: 0;
     height: 0;
@@ -1797,12 +1806,19 @@ h2.chapter-number {
 
     border-top: 0.33em solid transparent;
     border-bottom: 0.33em solid transparent;
-    border-left: calc(1.725 * 0.33em) solid var(--brand-color-blue);
+    border-left: calc(1.725 * 0.33em) solid transparent;
+
+    transition: border-left-color 0.3s ease-out;
+}
+
+.ru-keyword:hover::after {
+    border-left-color: var(--brand-color-blue);
 }
 
 ul.keywords-style {
     margin-left: -1.8em;
     font-size: 1.1em;
+    line-height: 1.4;
 }
 
 ul.keywords-style > li + li {
