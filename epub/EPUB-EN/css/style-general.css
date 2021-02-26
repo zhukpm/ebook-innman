@@ -261,6 +261,11 @@ ol.rounded-ol > li::before {
     text-align: center;
 }
 
+ol.rounded-ol.blue > li::before {
+    background-color: var(--brand-color-blue);
+    color: #fff;
+}
+
 ol.cyrillic-ol > li::before {
     color: var(--brand-color-green);
     text-align: right;
@@ -696,20 +701,33 @@ Customizing styles without adding new classes
     border-top: 2px solid var(--brand-color-gray);
 }
 
-.ru-quiz .no {
+.ru-quiz .questionTxt {
+    position: relative;
+}
+
+/* BUGFIX: Kotobee bug: separators are included into questions. So to create numbering
+ we use <em>Number</em> as a first question word. But so we can't use bold & italic in questions
+  anymore */
+
+.ru-quiz .questionTxt .no,
+.ru-quiz .questionTxt em {
     display: inline-block;
-    margin-left: -57px;
+    position: absolute;
+    left: -57px;
+    top: -.4em;
     width: 2em;
     height: 2em;
     border: 1px solid var(--brand-color-green);
     border-radius: 50%;
     font-size: 1em;
+    font-style: normal;
     line-height: 2em;
     text-align: center;
     margin-right: 20px;
 }
 
-.ru-quiz span.no::after {
+.ru-quiz .questionTxt span.no::after,
+.ru-quiz .questionTxt em::after {
     content: "";
 }
 
@@ -721,9 +739,15 @@ Customizing styles without adding new classes
     color: black;
 }
 
-.ru-quiz .questionTxt strong {
-    display: inline-block;
-    width: 0;
+.ru-quiz .ques:not(.separator) .questionTxt {
+    margin-left: 10%;
+}
+
+.ru-quiz .questionTxt strong,
+.ru-quiz .questionTxt span:first-of-type {
+    /*display: inline-block;*/
+    /*width: 0;*/
+    display: none;
 }
 
 .ru-quiz .answer {
@@ -869,6 +893,10 @@ Customizing styles without adding new classes
     /*.ru-quiz  input[type="submit"] {*/
     /*    font-size: 1em;*/
     /*}*/
+
+    .ru-quiz .ques:not(.separator) .questionTxt {
+        margin-left: -.5em;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1715,8 +1743,33 @@ h2.chapter-number {
 }
 
 .short-description .sub-header {
+    display: inline-block;
     font-weight: bold;
     margin-bottom: 0.9em;
+}
+
+.short-description .sub-header a {
+    font-weight: bold;
+    border-bottom: solid 2px var(--brand-color-green);
+}
+
+.short-description .sub-header::after {
+    display: inline-block;
+    content: "";
+    margin: 0 0 0 10px;
+    width: 0;
+    height: 0;
+    background: none;
+
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-left: calc(1.725 * 0.3em) solid transparent;
+
+    transition: border-left-color 0.3s ease-out;
+}
+
+.short-description .sub-header:hover::after {
+    border-left-color: var(--brand-color-green);
 }
 
 .dictionary-cover-page .chapter-cover {
@@ -1733,15 +1786,39 @@ h2.chapter-number {
 }
 
 .ru-keyword {
+    display: inline-block;
+    position: relative;
     margin-bottom: 0.35em;
     font-size: larger;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+.ru-keyword::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(100% - 1.03em);
+    margin: 0 0 0 10px;
+    width: 0;
+    height: 0;
+    background: none;
+
+    border-top: 0.33em solid transparent;
+    border-bottom: 0.33em solid transparent;
+    border-left: calc(1.725 * 0.33em) solid transparent;
+
+    transition: border-left-color 0.3s ease-out;
+}
+
+.ru-keyword:hover::after {
+    border-left-color: var(--brand-color-blue);
+}
+
 ul.keywords-style {
     margin-left: -1.8em;
     font-size: 1.1em;
+    line-height: 1.4;
 }
 
 ul.keywords-style > li + li {
