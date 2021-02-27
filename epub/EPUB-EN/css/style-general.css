@@ -221,21 +221,21 @@ a:not([href]) {
 /*
     Lists : ordered and unordered
  */
-ol.rounded-ol, ol.cyrillic-ol, ul {
+ol.rounded-ol, ol.latin-ol, ul {
     list-style: none;
     counter-reset: topics-counter;
     padding: 0;
     margin: 0 0 0 1em;
 }
 
-ol.rounded-ol > li, ol.cyrillic-ol > li, ul > li {
+ol.rounded-ol > li, ol.latin-ol > li, ul > li {
     counter-increment: topics-counter;
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
 }
 
-ol.rounded-ol > li + li, ol.cyrillic-ol > li + li, ul > li + li {
+ol.rounded-ol > li + li, ol.latin-ol > li + li, ul > li + li {
     margin-top: 1em;
 }
 
@@ -243,7 +243,7 @@ ul > li {
     align-items: flex-start;
 }
 
-ol.rounded-ol > li::before, ol.cyrillic-ol > li::before, ul > li::before {
+ol.rounded-ol > li::before, ol.latin-ol > li::before, ul > li::before {
     display: inline-block;
     flex-shrink: 0;
     width: 1.6em;
@@ -266,49 +266,49 @@ ol.rounded-ol.blue > li::before {
     color: #fff;
 }
 
-ol.cyrillic-ol > li::before {
+ol.latin-ol > li::before {
     color: var(--brand-color-green);
     text-align: right;
 }
 
-ol.cyrillic-ol > li:nth-of-type(1)::before {
-    content: 'а)';
+ol.latin-ol > li:nth-of-type(1)::before {
+    content: 'a)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(2)::before {
-    content: 'б)';
+ol.latin-ol > li:nth-of-type(2)::before {
+    content: 'b)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(3)::before {
-    content: 'в)';
+ol.latin-ol > li:nth-of-type(3)::before {
+    content: 'c)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(4)::before {
-    content: 'г)';
+ol.latin-ol > li:nth-of-type(4)::before {
+    content: 'd)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(5)::before {
-    content: 'д)';
+ol.latin-ol > li:nth-of-type(5)::before {
+    content: 'e)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(6)::before {
-    content: 'е)';
+ol.latin-ol > li:nth-of-type(6)::before {
+    content: 'f)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(7)::before {
-    content: 'ж)';
+ol.latin-ol > li:nth-of-type(7)::before {
+    content: 'g)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(8)::before {
-    content: 'з)';
+ol.latin-ol > li:nth-of-type(8)::before {
+    content: 'h)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(9)::before {
-    content: 'и)';
+ol.latin-ol > li:nth-of-type(9)::before {
+    content: 'i)';
 }
 
-ol.cyrillic-ol > li:nth-of-type(10)::before {
-    content: 'к)';
+ol.latin-ol > li:nth-of-type(10)::before {
+    content: 'j)';
 }
 
 ul > li::before {
