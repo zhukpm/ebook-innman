@@ -1,6 +1,2 @@
-*MISSING* Требования к управленческому решению.
-                                быстрая трансформированность инновационного решения в реальную
-                                    действительность; своевременность; альтернативность; достоверность; адресность;
-                                    непротиворечивость; правомочность и директивность; полнота; четкость указанных
-                                    целей,
-                                    конкретность сроков, основных путей и средств его выполнения.
+The requirements for the management decision.
+the rapid transformation of innovative solutions into reality; timeliness; alternativeness; reliability; targeting; consistency; eligibility and directivity; completeness; clear goals, specific timelines, the main ways and means of its implementation.
