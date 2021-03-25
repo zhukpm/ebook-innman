@@ -1,1 +1,66 @@
-*MISSING*
+In this chapter, we will briefly tell about the most effective Crowd Technologies, namely:
+Crowd Technologies
+Crowdsourcing
+Crowdfunding
+Crowdinvesting
+Crowdlending
+The world is undergoing an active transformation of the economic paradigm of development, the transition from the classical practice of management to a new one, implemented through the use of technologies of open discussions developed by the collective mind of the countries of the world community and used in innovation management.
+Crowd Technology – a set of methods, methods and tools for the effective use of financial, intellectual and labor resources, solving socially-oriented tasks, creating and implementing new products and services.
+The range of applications of crowd technologies: from raising funds for the implementation of projects to finding people, information and creating unusual content.
+The most effective of the group of Crowd Technologies are: Crowdsourcing, Crowdfunding, Crowdinvesting, Crowdlending. 
+Crowdsourcing technology
+Crowdsourcing – a set of methods, methods and tools for involving on the basis of digitalization a wide range of creative volunteers with creative abilities, knowledge and practical activity experience with goal to solving the tasks of innovation activity. 
+Classification of Crowdsourcing:
+By the main spheres of life activity;
+By the type of tasks to be solved.
+Advantages of Crowdsourcing:
+High uniqueness of projects
+Low self-cost of projects
+Large efficiency of decisions
+Disadvantages of Crowdsourcing:
+Complexity
+Leakage of confidential information
+The need to patent the results
+Lack of a philosophy of values
+Crowdinvesting technology
+Crowdinvesting – people investment, in which the investor receives shares, part of the property or other assets of the company as a reward for his contribution. 
+Crowdinvesting feature:
+Is a component part of Crowdfunding;
+It is based on Royalty models (this is the same Crowdfunding - financing by crowd, only in exchange for a potential profit proportional to own share in the investment)
+Advantages of Crowdinvesting:
+Making a profit on a share in the investment;
+High popularity;
+Complements bank investment.
+Disadvantages of Crowdinvesting:
+Domination of short-term financing;
+The need for financial literacy of people;
+Risks of depletion of people financial resources.
+Crowdlending technology
+Crowdlending - technology of lending by some individuals to other individuals or organizations, through a crowdlending Internet platform. 
+Crowdlending feature:
+Brings fast and high returns to investors, compared to deposits and bonds;
+The loan is given for a specific purpose, and its spending is controlled by the investor, who can return it with interest in case of non-purpose use;
+Allows the combination of different investment models on its Internet platforms with non-financial rewards;
+Controlled by banking institutions and credit reference bureaus.
+Advantages of Crowdlending:
+Easy to create;
+Deep market segmentation;
+High conversion rate.
+Disadvantages of Crowdlending:
+Low level of trust;
+Continuous investment in advertising;
+Difficulties with SEO-optimization.
+Open Space technology
+Open Space is the most common technology for open discussion of problems and finding solutions. It works on the basis of the use of collective intelligence.
+Open Space feature:
+It is used when there are problems in the company, in which the entire staff is interested in solving them;
+It is designed at quickly collect a large number of different opinions expressed by direct participants in the main processes of the company, and is based on open cooperation between them in the framework of solving generalized, holistic task.
+Advantages of Open Space:
+Expanding the communication space;
+Establishing communications;
+Use of collective intelligence.
+Disadvantages of Open Space:
+Additional employee monitoring;
+Leaking information to competitors;
+Imposition of opinions by the dominant group.
+The development of virtual space and the movement of the main spheres of life into it has led to the emergence of innovation cryptotechnologies that replace traditional human communication with communication with people through electronic communications and various digital technologies.
