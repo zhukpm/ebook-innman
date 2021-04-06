@@ -743,12 +743,12 @@ Customizing styles without adding new classes
     margin-left: 10%;
 }
 
-.ru-quiz .questionTxt strong,
-.ru-quiz .questionTxt span:first-of-type {
-    /*display: inline-block;*/
-    /*width: 0;*/
-    display: none;
-}
+/*.ru-quiz .questionTxt strong,*/
+/*.ru-quiz .questionTxt span:first-of-type {*/
+/*    !*display: inline-block;*!*/
+/*    !*width: 0;*!*/
+/*    display: none;*/
+/*}*/
 
 .ru-quiz .answer {
     position: relative;

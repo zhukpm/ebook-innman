@@ -168,7 +168,7 @@
 }
 
 #kiSystemAlertBox .kbAlertScroll > span[title] {
-    margin-left: 20%;
+    margin-left: 8%;
     counter-increment: topics-counter;
     font-size: 1em;
     line-height: 1.3;
