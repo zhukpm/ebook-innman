@@ -177,7 +177,7 @@
 }
 
 #kiSystemAlertBox .kbAlertScroll > span[title]::before {
-    content: "Вопрос";
+    content: "Question";
     visibility: visible;
 }
 
